@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./jogo.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font Inter-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+
+        <div>
+            <img class="img-forca" id="img-forca" src="../../assets/images/boneco-forca.png"
+                alt="Forca com boneco de palitinhos preso à corda">
+        </div>
+
+
+        <div>
+            <input class="campo-entrada" id="inputPalpite" type="text" maxlength="1" value=""
+                autocomplete="off">
+            <button class="botao" onclick="palpite()">OK</button>
+        </div>
+
+        <div class="palavra" id="palavra">
+        </div>
+
+        <div class="botoes">
+            <button class="botao botao-jogo" routerLink="../tela-inicial">Desistir</button>
+            <button class="botao botao-jogo" onclick="novoJogo()">Novo jogo</button>
+        </div>
+    </section>
+
+    <section class="area-informacao">
+        <div class="categoria">
+            <p>A categoria da palavra é:</p>
+            <strong><p id="categoria-palavra"></p>
+        </div></strong>
+
+        <div>
+            <p>Letras já usadas:</p>
+            <strong>
+                <p id="letras-usadas"></p>
+            </strong>
+        </div>
+    </section>
+</body>
+
+<script src="/script.js"></script>
+
+</html>

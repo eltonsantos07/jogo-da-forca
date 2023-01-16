@@ -1,0 +1,67 @@
+input {
+  padding: 5px;
+}
+
+.img-forca {
+  width: 200px;
+}
+
+.campo-entrada {
+  width: 100px;
+  margin: 15px 15px 0 0;
+  border: none;
+  text-align: center;
+}
+
+.palavra {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.exibicaocaractere {
+  text-align: center;
+  font-weight: bold;
+}
+
+.exibicaocaractere > div {
+    height: 100px;
+  }
+
+.exibicao-letra {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.botoes {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .botao-jogo {
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .area-informacao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 100px 0 0 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .area-informacao > div {
+    margin-bottom: 50px;
+  }
+
+  .categoria {
+    display: flex;
+    flex-direction: row;
+  } 
